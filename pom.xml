@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.informaticum.skeleton</groupId>
+  <artifactId>aggregate-pom</artifactId>
+  <version>1</version>
+
+  <name>Skeleton :: Aggregate POM</name>
+  <description>The Aggregate POM of the Skeleton-Projects</description>
+  <url>https://github.com/informaticum/skeleton-java-maven</url>
+
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>parent-pom</module>
+    <module>dependencies-bom</module>
+    <module>showcase</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.0.0-M2</version>
+        <executions>
+          <execution>
+            <id>enforce-aggregation-usage</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <phase>validate</phase>
+            <configuration>
+              <!-- Fail intentionally ... -->
+              <fail>true</fail>
+              <rules>
+                <evaluateBeanshell>
+                  <!-- ... by evaluating to 'false' ... -->
+                  <condition>false</condition>
+                  <!-- ... and telling about the reason! -->
+                  <message>
+This specific POM file is intended to be used as an aggregation POM only and it shall neither be installed nor deployed!
+Instead, it lists all modules enabling dependent builds.
+In result, you must name the specific reactor project(s) to be build.
+For example, call 'mvn --projects parent-pom --also-make-dependents clean verify' to build the project's parent POM plus
+all dependend modules.
+                  </message>
+                </evaluateBeanshell>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
