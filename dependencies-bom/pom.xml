@@ -21,15 +21,25 @@
 
   <dependencyManagement>
     <dependencies>
+      <!--:-:-:-:-:-:-:-:-:-:-:-:-:-:- [1/5] COMPILE SCOPE -:-:-:-:-:-:-:-:-:-:-:-:-:-:-->
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>1.7.28</version>
       </dependency>
+      <!--:-:-:-:-:-:-:-:-:-:-:-:-:-:- [2/5] PROVIDED SCOPE -:-:-:-:-:-:-:-:-:-:-:-:-:-:-->
+      <!--:-:-:-:-:-:-:-:-:-:-:-:-:-:- [3/5] RUNTIME SCOPE -:-:-:-:-:-:-:-:-:-:-:-:-:-:-->
+      <!--:-:-:-:-:-:-:-:-:-:-:-:-:-:- [4/5] TEST SCOPE -:-:-:-:-:-:-:-:-:-:-:-:-:-:-->
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
         <version>1.2.3</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.github.stefanbirkner</groupId>
+        <artifactId>system-rules</artifactId>
+        <version>1.19.0</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -44,12 +54,7 @@
         <version>3.13.2</version>
         <scope>test</scope>
       </dependency>
-      <dependency>
-        <groupId>com.github.stefanbirkner</groupId>
-        <artifactId>system-rules</artifactId>
-        <version>1.19.0</version>
-        <scope>test</scope>
-      </dependency>
+      <!--:-:-:-:-:-:-:-:-:-:-:-:-:-:- [5/5] SYSTEM SCOPE -:-:-:-:-:-:-:-:-:-:-:-:-:-:-->
     </dependencies>
   </dependencyManagement>
 
