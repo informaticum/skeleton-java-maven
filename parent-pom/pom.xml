@@ -210,6 +210,19 @@
             </execution>
           </executions>
         </plugin>
+        <plugin>
+          <groupId>org.owasp</groupId>
+          <artifactId>dependency-check-maven</artifactId>
+          <version>5.2.2</version>
+          <executions>
+            <execution>
+              <id>check-vulnerabilities</id>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
         <!--:-:-:-:-:-:-:-:-:-:-:-:-:-:- [3/3] SITE LIFECYCLE -:-:-:-:-:-:-:-:-:-:-:-:-:-:-->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
