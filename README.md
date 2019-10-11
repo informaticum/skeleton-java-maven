@@ -13,6 +13,7 @@ This skeleton project comes along with the following features:
 - Checks for ["used but undeclared" and for "declared but unused" dependencies](https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html)
 - Checks known vulnerabilities (by determining if there is a Common Platform Enumeration (CPE)) using [the OWASP dependency check](https://jeremylong.github.io/DependencyCheck/)
     - Note: You might want to migrate to [an offline scenario](https://www.adesso.de/de/technisches/githubblog/sicherheitsluecken-mit-dem-owasp-dependency-check-erkennen-2.jsp)  
+- Colorises/Brushes the code snippets within the JavaDoc HTML files (see [`HelloWorldApp.java`](showcase/src/main/java/de/informaticum/skeleton/HelloWorldApp.java#L30)), by utilising [SyntaxHighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter) via [the Maven-ised artifact](https://github.com/informaticum/syntaxhighlighter-build)
 
 ## Run the Build Script -- That's it
 
