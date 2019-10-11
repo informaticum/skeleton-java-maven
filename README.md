@@ -13,7 +13,11 @@ This skeleton project comes along with the following features:
 - Checks known vulnerabilities (by determining if there is a Common Platform Enumeration (CPE)) using [the OWASP dependency check](https://jeremylong.github.io/DependencyCheck/)
     - Note: You might want to migrate to [an offline scenario](https://www.adesso.de/de/technisches/githubblog/sicherheitsluecken-mit-dem-owasp-dependency-check-erkennen-2.jsp)  
 
-To start all these features, just run a build by executing the [`build.sh`](build.sh) script. It simply runs Maven and, thus, executes all the plug-ins mentioned above.
+## Run the Build Script -- That's it
+
+To start all these features, just run a build by executing the [`build.sh`](build.sh) script. It simply calls Maven and, thus, executes all the plug-ins mentioned above.
+
+## Get Your Clone
 
 So, if this fits to your needs, get your clone and adopt everything you want to.
 I suggest to alter the project's name; It probably is not named "skeleton" ;-)
