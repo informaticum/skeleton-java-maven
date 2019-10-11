@@ -15,7 +15,7 @@
 
   <name>Skeleton :: Dependencies BOM</name>
   <description>The Dependencies BOM-POM of the Skeleton-Projects</description>
-  <url>https://github.com/informaticum/skeleton-java-maven/dependencies-bom</url>
+  <url>https://github.com/informaticum/skeleton-java-maven/tree/master/dependencies-bom</url>
 
   <packaging>pom</packaging>
 

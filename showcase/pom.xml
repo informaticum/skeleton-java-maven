@@ -15,7 +15,7 @@
 
   <name>Skeleton :: Showcase</name>
   <description>The Showcase Project</description>
-  <url>https://github.com/informaticum/skeleton-java-maven/showcase</url>
+  <url>https://github.com/informaticum/skeleton-java-maven/tree/master/showcase</url>
 
   <dependencyManagement>
     <dependencies>
