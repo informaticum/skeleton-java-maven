@@ -16,4 +16,4 @@ This skeleton project comes along with the following features:
 To start all these features, just run a build by executing the [`build.sh`](build.sh) script. It simply runs Maven and, thus, executes all the plug-ins mentioned above.
 
 So, if this fits to your needs, get your clone and adopt everything you want to.
-I suggest to alter the project's name; It probably is not named "skeleton".
+I suggest to alter the project's name; It probably is not named "skeleton" ;-)
