@@ -103,6 +103,9 @@
                     <message>Maven version must be at least v${version.maven}!</message>
                     <version>${version.maven}</version>
                   </requireMavenVersion>
+                  <requirePluginVersions>
+                    <message>Plugin versions must be specified!</message>
+                  </requirePluginVersions>
                 </rules>
               </configuration>
             </execution>
