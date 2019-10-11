@@ -84,7 +84,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>de.informaticum.skeleton.SkeletonMainApp</mainClass>
+              <mainClass>de.informaticum.skeleton.HelloWorldApp</mainClass>
             </manifest>
           </archive>
         </configuration>

@@ -21,14 +21,14 @@ public class HelloWorldTest {
     @Test
     public void testSkeletonMainAppLogOut()
     throws Exception {
-        SkeletonMainApp.main(new String[0]);
-        assertThat(this.systemOutRule.getLog()).contains("Starting the Skeleton App");
+        HelloWorldApp.main(new String[0]);
+        assertThat(this.systemOutRule.getLog()).contains("Starting the Hello-World App");
     }
 
     @Test
     public void testSkeletonMainAppSystemOut()
     throws Exception {
-        SkeletonMainApp.main(new String[0]);
+        HelloWorldApp.main(new String[0]);
         assertThat(this.systemOutRule.getLog()).contains("This is the message: Hello World!");
     }
 
