@@ -9,6 +9,7 @@ This skeleton project comes along with the following features:
 - Enforcer rules to [ensure an up-to-date Maven](https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html) and [defined versions of the plug-ins](https://maven.apache.org/enforcer/enforcer-rules/requirePluginVersions.html)
 - Automatic versions checks (for [parent POM](https://www.mojohaus.org/versions-maven-plugin/display-parent-updates-mojo.html), [plug-ins](https://www.mojohaus.org/versions-maven-plugin/display-plugin-updates-mojo.html), [dependencies](https://www.mojohaus.org/versions-maven-plugin/display-dependency-updates-mojo.html), and [properties](https://www.mojohaus.org/versions-maven-plugin/display-property-updates-mojo.html)) during the build process
 - [Flattens the POM](https://www.mojohaus.org/flatten-maven-plugin/) of the application sub-module
+- Assembles an all-inclusive JAR, plus reference to the main application to ease the command-line's JAR-usage
 - Checks for ["used but undeclared" and for "declared but unused" dependencies](https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html)
 - Checks known vulnerabilities (by determining if there is a Common Platform Enumeration (CPE)) using [the OWASP dependency check](https://jeremylong.github.io/DependencyCheck/)
     - Note: You might want to migrate to [an offline scenario](https://www.adesso.de/de/technisches/githubblog/sicherheitsluecken-mit-dem-owasp-dependency-check-erkennen-2.jsp)  
